@@ -234,13 +234,15 @@ def mangaHere(counter, parray):
             # Checks whole main instead of tab
             # There were two tabs (shared and serial) and only the first was checked
             try:
-                data = BeautifulSoup(response.text, "lxml").body.find(class_='manga-list-4-list line').getText()
-                s.append(BeautifulSoup(response.text, "lxml").body.find(class_='manga-list-4-list line').getText())
+                data = BeautifulSoup(response.text, "lxml").body.find(class_='manga-list-4-list line')
+                data = data.findAll(class_='manga-list-4-item-tip')[1].getText()
+                s.append(data)
             except:
                 data = BeautifulSoup(response.text, "lxml").body.find(class_='manga-list-4-list line')
-                s.append(BeautifulSoup(response.text, "lxml").body.find(class_='manga-list-4-list line'))
+                data = data.findAll(class_='manga-list-4-item-tip')[1]
+                s.append(data)
             print(data)
-            print('s['+str(site)+'] had no issues')
+            #print('s['+str(site)+'] had no issues')
             if ((data == None) or (str(data) == 'None')):
                 print(str(url[site])+' is None')
                 logger = open('MangaHere.txt', 'a')
@@ -353,7 +355,7 @@ def main():
         better_sleep(secrets.randbelow(69))
         #Get log file size in bytes
         MangaHere_text_file_size = os.path.getsize('MangaHere.txt')
-        if MangaHere_text_file_size > 43210:
+        if MangaHere_text_file_size > 54321:
             # clear out the log file if it gets too big (1MB)
             logger_lines = []
             logger = open('MangaHere.txt', 'r')
@@ -361,7 +363,7 @@ def main():
             logger.close()
             logger = open('MangaHere.txt', 'w')
             for number, line in enumerate(logger_lines):
-                if number > (len(logger_lines)/5) or number == 0:
+                if number > (len(logger_lines)/6) or number == 0:
                     logger.write(line)
             logger.close()
             daycount = count
