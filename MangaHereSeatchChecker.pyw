@@ -233,6 +233,7 @@ def mangaHere(counter, parray):
             # parse the downloaded page
             # Checks whole main instead of tab
             # There were two tabs (shared and serial) and only the first was checked
+            data = 'None'
             try:
                 data = BeautifulSoup(response.text, "lxml").body.find(class_='manga-list-4-list line')
                 data = data.findAll(class_='manga-list-4-item-tip')[1].getText()
@@ -241,7 +242,7 @@ def mangaHere(counter, parray):
                 data = BeautifulSoup(response.text, "lxml").body.find(class_='manga-list-4-list line')
                 data = data.findAll(class_='manga-list-4-item-tip')[1]
                 s.append(data)
-            print(data)
+            #print(data)
             #print('s['+str(site)+'] had no issues')
             if ((data == None) or (str(data) == 'None')):
                 print(str(url[site])+' is None')
