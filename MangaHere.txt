@@ -1,0 +1,455 @@
+This is the log of stuff:
+
+09/07/2022 09:09:33 PM
+MangaHere got response
+09/07/2022 09:09:33 PM
+Just started.  Not sending email. 
+
+09/07/2022 09:10:19 PM
+MangaHere got response
+09/07/2022 09:10:19 PM
+Just started.  Not sending email. 
+
+09/07/2022 09:11:04 PM
+MangaHere got response
+09/07/2022 09:11:05 PM
+Go to: 
+New chapter!
+
+09/07/2022 09:19:14 PM
+MangaHere got response
+09/07/2022 09:19:14 PM
+Just started.  Not sending email. 
+
+09/07/2022 09:21:50 PM
+MangaHere got response
+09/07/2022 09:21:50 PM
+Just started.  Not sending email. 
+
+09/07/2022 09:54:01 PM
+MangaHere got response
+09/07/2022 09:54:01 PM
+Just started.  Not sending email. 
+
+09/07/2022 09:54:16 PM
+MangaHere got response
+09/07/2022 09:54:16 PM
+Just started.  Not sending email. 
+
+09/07/2022 09:54:48 PM
+MangaHere got response
+09/07/2022 09:54:48 PM
+Just started.  Not sending email. 
+
+09/07/2022 09:55:04 PM
+MangaHere got response
+09/07/2022 09:55:04 PM
+Just started.  Not sending email. 
+
+09/07/2022 09:56:11 PM
+MangaHere got response
+09/07/2022 09:56:11 PM
+Just started.  Not sending email. 
+
+09/07/2022 09:58:29 PM
+MangaHere got response
+09/07/2022 09:58:29 PM
+Just started.  Not sending email. 
+
+09/07/2022 09:58:35 PM
+MangaHere got response
+09/07/2022 09:58:35 PM
+No chapters
+
+09/07/2022 09:58:41 PM
+MangaHere got response
+09/07/2022 09:58:41 PM
+No chapters
+
+09/07/2022 09:58:50 PM
+MangaHere got response
+09/07/2022 09:58:50 PM
+No chapters
+
+09/07/2022 09:58:59 PM
+MangaHere got response
+09/07/2022 09:58:59 PM
+No chapters
+
+09/07/2022 09:59:03 PM
+MangaHere got response
+09/07/2022 09:59:03 PM
+No chapters
+
+09/07/2022 09:59:11 PM
+MangaHere got response
+09/07/2022 09:59:11 PM
+No chapters
+
+09/07/2022 09:59:17 PM
+MangaHere got response
+09/07/2022 09:59:17 PM
+No chapters
+
+09/07/2022 09:59:21 PM
+MangaHere got response
+09/07/2022 09:59:21 PM
+No chapters
+
+09/07/2022 09:59:23 PM
+MangaHere got response
+09/07/2022 09:59:23 PM
+No chapters
+
+09/07/2022 09:59:28 PM
+MangaHere got response
+09/07/2022 09:59:28 PM
+No chapters
+
+09/07/2022 09:59:37 PM
+MangaHere got response
+09/07/2022 09:59:37 PM
+No chapters
+
+09/07/2022 09:59:41 PM
+MangaHere got response
+09/07/2022 09:59:41 PM
+No chapters
+
+09/07/2022 10:01:08 PM
+There was a main() error. 
+
+
+09/07/2022 10:03:22 PM
+MangaHere got response
+09/07/2022 10:03:22 PM
+Just started.  Not sending email. 
+
+09/07/2022 10:03:27 PM
+MangaHere got response
+09/07/2022 10:03:27 PM
+No chapters
+
+09/07/2022 10:03:31 PM
+MangaHere got response
+09/07/2022 10:03:31 PM
+No chapters
+
+09/07/2022 10:03:57 PM
+MangaHere got response
+09/07/2022 10:03:57 PM
+No chapters
+
+09/07/2022 10:04:05 PM
+MangaHere got response
+09/07/2022 10:04:05 PM
+No chapters
+
+09/07/2022 10:04:09 PM
+MangaHere got response
+09/07/2022 10:04:09 PM
+No chapters
+
+09/07/2022 10:04:12 PM
+MangaHere got response
+09/07/2022 10:04:12 PM
+No chapters
+
+09/07/2022 10:04:17 PM
+MangaHere got response
+09/07/2022 10:04:17 PM
+No chapters
+
+09/07/2022 10:04:19 PM
+MangaHere got response
+09/07/2022 10:04:19 PM
+No chapters
+
+09/07/2022 10:04:28 PM
+MangaHere got response
+09/07/2022 10:04:28 PM
+No chapters
+
+09/07/2022 10:04:33 PM
+MangaHere got response
+09/07/2022 10:04:33 PM
+No chapters
+
+09/07/2022 10:04:41 PM
+MangaHere got response
+09/07/2022 10:04:41 PM
+No chapters
+
+09/07/2022 10:04:43 PM
+MangaHere got response
+09/07/2022 10:04:43 PM
+No chapters
+
+09/07/2022 10:04:47 PM
+MangaHere got response
+09/07/2022 10:04:47 PM
+No chapters
+
+09/07/2022 10:04:54 PM
+MangaHere got response
+09/07/2022 10:04:54 PM
+No chapters
+
+09/07/2022 10:05:00 PM
+MangaHere got response
+09/07/2022 10:05:00 PM
+No chapters
+
+09/07/2022 10:05:02 PM
+MangaHere got response
+09/07/2022 10:05:02 PM
+No chapters
+
+09/07/2022 10:05:06 PM
+MangaHere got response
+09/07/2022 10:05:06 PM
+No chapters
+
+09/07/2022 10:05:10 PM
+MangaHere got response
+09/07/2022 10:05:10 PM
+No chapters
+
+09/07/2022 10:05:19 PM
+MangaHere got response
+09/07/2022 10:05:19 PM
+No chapters
+
+09/07/2022 10:05:22 PM
+MangaHere got response
+09/07/2022 10:05:22 PM
+No chapters
+
+09/07/2022 10:05:24 PM
+MangaHere got response
+09/07/2022 10:05:24 PM
+No chapters
+
+09/07/2022 10:05:28 PM
+MangaHere got response
+09/07/2022 10:05:28 PM
+No chapters
+
+09/07/2022 10:05:37 PM
+MangaHere got response
+09/07/2022 10:05:37 PM
+No chapters
+
+09/07/2022 10:05:41 PM
+MangaHere got response
+09/07/2022 10:05:41 PM
+No chapters
+
+09/07/2022 10:05:48 PM
+MangaHere got response
+09/07/2022 10:05:49 PM
+Go to: 
+mangahere.cc/manga/mushoku_no_tensei_eris_gaiden/
+mangahere.cc/manga/kenja_no_mago/
+New chapter!
+
+09/07/2022 10:05:55 PM
+MangaHere got response
+09/07/2022 10:05:55 PM
+No chapters
+
+09/07/2022 10:05:56 PM
+MangaHere got response
+09/07/2022 10:05:56 PM
+No chapters
+
+09/07/2022 10:06:00 PM
+MangaHere got response
+09/07/2022 10:06:00 PM
+No chapters
+
+09/07/2022 10:06:03 PM
+MangaHere got response
+09/07/2022 10:06:03 PM
+No chapters
+
+09/07/2022 10:06:12 PM
+MangaHere got response
+09/07/2022 10:06:12 PM
+No chapters
+
+09/07/2022 10:06:17 PM
+MangaHere got response
+09/07/2022 10:06:17 PM
+No chapters
+
+09/07/2022 10:06:24 PM
+MangaHere got response
+09/07/2022 10:06:25 PM
+Go to: 
+mangahere.cc/manga/kenja_no_mago/
+mangahere.cc/manga/mushoku_tensei_isekai_ittara_honki_dasu/
+New chapter!
+
+09/07/2022 10:06:28 PM
+MangaHere got response
+09/07/2022 10:06:28 PM
+No chapters
+
+09/07/2022 10:06:34 PM
+MangaHere got response
+09/07/2022 10:06:34 PM
+No chapters
+
+09/08/2022 07:12:36 PM
+MangaHere got response
+09/08/2022 07:12:36 PM
+Just started.  Not sending email. 
+
+09/08/2022 07:13:22 PM
+MangaHere got response
+09/08/2022 07:13:22 PM
+Just started.  Not sending email. 
+
+09/17/2022 09:14:28 PM
+MangaHere got response
+09/17/2022 09:14:28 PM
+Just started.  Not sending email. 
+
+09/17/2022 09:15:57 PM
+MangaHere got response
+09/17/2022 09:15:57 PM
+Just started.  Not sending email. 
+
+09/17/2022 09:16:58 PM
+MangaHere got response
+09/17/2022 09:16:58 PM
+Just started.  Not sending email. 
+
+09/17/2022 09:18:33 PM
+MangaHere got response
+09/17/2022 09:18:33 PM
+Just started.  Not sending email. 
+
+09/17/2022 09:19:15 PM
+MangaHere got response
+09/17/2022 09:19:15 PM
+Just started.  Not sending email. 
+
+09/17/2022 09:20:12 PM
+MangaHere got response
+09/17/2022 09:20:12 PM
+No new chapters
+
+09/17/2022 09:21:00 PM
+MangaHere got response
+09/17/2022 09:21:00 PM
+Just started.  Not sending email. 
+
+09/17/2022 09:21:47 PM
+MangaHere got response
+09/17/2022 09:21:47 PM
+No new chapters
+
+09/17/2022 09:24:42 PM
+MangaHere got response
+09/17/2022 09:24:42 PM
+Just started.  Not sending email. 
+
+09/17/2022 09:25:17 PM
+MangaHere got response
+09/17/2022 09:25:17 PM
+Just started.  Not sending email. 
+
+09/17/2022 09:25:42 PM
+MangaHere got response
+09/17/2022 09:25:42 PM
+No new chapters
+
+09/18/2022 04:07:31 AM
+https://www.mangahere.cc/manga/mushoku_no_tensei_eris_gaiden/ is None
+New chapter!
+
+09/18/2022 04:07:31 AM
+https://www.mangahere.cc/manga/mushoku_tensei_isekai_ittara_honki_dasu/ is None
+New chapter!
+
+09/18/2022 04:07:31 AM
+https://www.mangahere.cc/manga/mushoku_tensei_depressed_magician/ is None
+New chapter!
+
+09/18/2022 04:07:31 AM
+MangaHere got response
+09/18/2022 04:07:31 AM
+Just started.  Not sending email. 
+
+09/18/2022 04:07:58 AM
+https://www.mangahere.cc/manga/mushoku_no_tensei_eris_gaiden/ is None
+New chapter!
+
+09/18/2022 04:07:58 AM
+https://www.mangahere.cc/manga/mushoku_tensei_isekai_ittara_honki_dasu/ is None
+New chapter!
+
+09/18/2022 04:07:59 AM
+https://www.mangahere.cc/manga/mushoku_tensei_depressed_magician/ is None
+New chapter!
+
+09/18/2022 04:07:59 AM
+MangaHere got response
+09/18/2022 04:07:59 AM
+No new chapters
+
+09/18/2022 04:08:35 AM
+https://www.mangahere.cc/manga/mushoku_no_tensei_eris_gaiden/ is None
+
+09/18/2022 04:08:35 AM
+https://www.mangahere.cc/manga/mushoku_tensei_isekai_ittara_honki_dasu/ is None
+
+09/18/2022 04:08:36 AM
+https://www.mangahere.cc/manga/mushoku_tensei_depressed_magician/ is None
+
+09/18/2022 04:08:36 AM
+MangaHere got response
+09/18/2022 04:08:36 AM
+Just started.  Not sending email. 
+
+09/18/2022 04:08:48 AM
+https://www.mangahere.cc/manga/mushoku_no_tensei_eris_gaiden/ is None
+
+09/18/2022 04:08:48 AM
+https://www.mangahere.cc/manga/mushoku_tensei_isekai_ittara_honki_dasu/ is None
+
+09/18/2022 04:08:49 AM
+https://www.mangahere.cc/manga/mushoku_tensei_depressed_magician/ is None
+
+09/18/2022 04:08:49 AM
+MangaHere got response
+09/18/2022 04:08:49 AM
+No new chapters
+
+09/19/2022 10:13:34 PM
+MangaHere got response
+09/19/2022 10:13:34 PM
+Just started.  Not sending email. 
+
+09/19/2022 10:16:09 PM
+https://www.mangahere.cc/search?title=mushoku+tensei is None
+
+09/19/2022 10:16:09 PM
+MangaHere got response
+09/19/2022 10:16:09 PM
+Just started.  Not sending email. 
+
+09/19/2022 10:16:15 PM
+https://www.mangahere.cc/search?title=mushoku+tensei is None
+
+09/19/2022 10:16:15 PM
+MangaHere got response
+09/19/2022 10:16:15 PM
+No new chapters
+
+09/19/2022 10:17:23 PM
+MangaHere got response
+09/19/2022 10:17:23 PM
+Just started.  Not sending email. 
