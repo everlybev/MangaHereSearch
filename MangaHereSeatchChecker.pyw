@@ -18,28 +18,58 @@ def better_sleep(time2wait):
     while((time.time()-start)<time2wait-.005):
         time.sleep(1)
 
+def get_lines_between_separator(starting_separator, TheConfigFile, ending_separator=''):
+    #Opens config file and returns a list of every line betwix the separators
+    starting_separator = str(starting_separator)
+    if ending_separator == '':
+        ending_separator = starting_separator
+    else:
+        ending_separator = str(ending_separator)
+    spot = 0
+    separatorIs = [5, 9]
+    logger = open(TheConfigFile, 'r')
+    desiredLines = logger.readlines()
+    separators = [starting_separator, ending_separator]
+    #print(desiredLines)
+    for i in range(10, len(desiredLines)): #Finds starting and ending lines with relevant info
+        if spot > 1:
+            pass
+        else:
+            if desiredLines[i] == separators[spot]:
+                separatorIs[spot] = i
+                spot = spot + 1
+                if spot == 3:
+                    i = 2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2
+    i = 0
+    stuff_between_separators = []
+    for i in range(separatorIs[0]+1, separatorIs[1]):#Checks through each line between first and second separator
+        #print(i)
+        line_no_space = desiredLines[i].split('\n')[0]
+        line_no_space = str(line_no_space.rstrip())
+        stuff_between_separators.append(line_no_space)
+    return stuff_between_separators
+
 def getStatus(string):
-    configurationFile = open(TheConfigurationFile, 'r')
-    config = str(configurationFile.read())
-    configurationFile.close()
-    status = config.split('#########################################################################')[1]
-    status = status.split('#########################################################################')[0]
-    #print(status)
-    string = str(string)
-    status = str(status.split(string)[1])
-    #at this point if particular_site_status is MStatus int stus will not contain a :
-    try:
-        returnStatus = status.split('Status')[0].strip()
-    except:
-        pass
-    if status.__contains__('\n'):
-        returnStatus = status.split('\n')[0].strip()
-    if status.__contains__(' '):
-        returnStatus = status.split(' ')[0].strip()
-    if status.__contains__('Status'):
-        returnStatus = status.split('Status')[0].strip()
-    #print(returnStatus)
-    return returnStatus
+    particular_site_status = str(string)
+    particular_site_status = particular_site_status.replace(': ', '').strip()
+    desiredInfoSeparators = '#########################################################################' + '\n'
+    list_of_statuses = get_lines_between_separator(desiredInfoSeparators, TheConfigurationFile)
+    #print(list_of_statuses)
+    GoNoGo_result = 'fail'
+    for i in range(0, len(list_of_statuses)):
+        status = list_of_statuses[i].replace(': Go', '')
+        status = status.replace(': go', '')
+        status = status.replace(': No', '')
+        status = status.replace(': no', '')
+        status = status.replace(': GO', '')
+        status = status.replace(': NO', '')
+        status = status.strip()
+        #print(status)
+        if status == particular_site_status:
+            GoNoGo_result = list_of_statuses[i].replace(particular_site_status + ': ', '')
+            i = len(list_of_statuses) + 1
+    print(GoNoGo_result)
+    return GoNoGo_result
     
 #Get email and password
 def login_info():
