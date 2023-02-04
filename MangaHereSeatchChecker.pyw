@@ -269,12 +269,15 @@ def mangaHere(counter, parray):
                 data = data.findAll(class_='manga-list-4-item-tip')[1].getText()
                 s.append(data)
             except:
-                data = BeautifulSoup(response.text, "lxml").body.find(class_='manga-list-4-list line')
-                data = data.findAll(class_='manga-list-4-item-tip')[1]
+                try:
+                    data = BeautifulSoup(response.text, "lxml").body.find(class_='manga-list-4-list line')
+                    data = data.findAll(class_='manga-list-4-item-tip')[1]
+                except:
+                    data = '{} seems to be down'.format(url[site])
                 s.append(data)
             #print(data)
             #print('s['+str(site)+'] had no issues')
-            if ((data == None) or (str(data) == 'None')):
+            if ((data == None) or (str(data) == 'None') or (response == None)):
                 print(str(url[site])+' is None')
                 logger = open('MangaHere.txt', 'a')
                 now = datetime.now()
