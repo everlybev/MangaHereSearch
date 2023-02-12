@@ -274,7 +274,14 @@ def mangaHere(counter, parray):
                     data = data.findAll(class_='manga-list-4-item-tip')[1]
                 except:
                     data = '{} seems to be down'.format(url[site])
-                s.append(data)
+            data = data.replace('Latest Chapter:Ch.', '')
+            starts_with_zero = True
+            while starts_with_zero:
+                if data.startswith('0'):
+                    data = data[1:]
+                else:
+                    starts_with_zero = False
+            s.append(data)
             #print(data)
             #print('s['+str(site)+'] had no issues')
             if ((data == None) or (str(data) == 'None') or (response == None)):
@@ -298,7 +305,7 @@ def mangaHere(counter, parray):
                     msg = (msg +'\n'+truncurl[site])
                 except:
                     truncurl.append('0')
-                    msg = (msg +'\n'+truncurl[site])
+                    msg = (msg +'\n'+truncurl[site] + ' ch ' + data[site])
     print('finished for site in range(0, len(url), 1)')
     #sendEmail = 1
     if site != "Fucked":
