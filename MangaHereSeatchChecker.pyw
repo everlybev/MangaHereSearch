@@ -302,10 +302,10 @@ def mangaHere(counter, parray):
                 sendEmail = 1
                 p[site] = s[site]
                 try:
-                    msg = (msg +'\n'+truncurl[site] + ' ch ' + data[site])
+                    msg = (msg +'\n'+truncurl[site] + ' ch ' + s[site])
                 except:
                     truncurl.append('0')
-                    msg = (msg +'\n'+truncurl[site] + ' ch ' + data[site])
+                    msg = (msg +'\n'+truncurl[site] + ' ch ' + s[site])
     print('finished for site in range(0, len(url), 1)')
     #sendEmail = 1
     if site != "Fucked":
