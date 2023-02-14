@@ -302,7 +302,7 @@ def mangaHere(counter, parray):
                 sendEmail = 1
                 p[site] = s[site]
                 try:
-                    msg = (msg +'\n'+truncurl[site])
+                    msg = (msg +'\n'+truncurl[site] + ' ch ' + data[site])
                 except:
                     truncurl.append('0')
                     msg = (msg +'\n'+truncurl[site] + ' ch ' + data[site])
