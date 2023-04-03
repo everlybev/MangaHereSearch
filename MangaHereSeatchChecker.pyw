@@ -49,6 +49,13 @@ def get_lines_between_separator(starting_separator, TheConfigFile, ending_separa
         stuff_between_separators.append(line_no_space)
     return stuff_between_separators
 
+the_file = 'MangaHere.txt'
+def write2file(text, file=the_file, mode='a'):
+    logger = open(file, mode)
+    logger.write(text)
+    logger.write('\n')
+    logger.close()
+
 def getStatus(string):
     particular_site_status = str(string)
     particular_site_status = particular_site_status.replace(': ', '').strip()
@@ -175,7 +182,13 @@ def email(sites):
 ##            logger.write(str('Failed to send email to ' + str(the_emails[i]) + '!'))
 ##            logger.close()
 
-
+def writeTOlog(x):
+    logger = open('MangaHere.txt', 'a')
+    now = datetime.now()
+    dt_string = now.strftime("%m/%d/%Y %I:%M:%S %p")
+    logger.write('\n')
+    logger.write(x + '\n')
+    logger.close()
 
 #pokemon checker
 def mangaHere(counter, parray):
@@ -281,6 +294,7 @@ def mangaHere(counter, parray):
                     data = data[1:]
                 else:
                     starts_with_zero = False
+            write2file('{} current chapter is {}'.format(url[site], data))
             s.append(data)
             #print(data)
             #print('s['+str(site)+'] had no issues')
@@ -303,8 +317,10 @@ def mangaHere(counter, parray):
                 p[site] = s[site]
                 try:
                     msg = (msg +'\n'+truncurl[site] + ' ch ' + s[site])
-                except:
+                except Exception as xxx:
+                    writeTOlog(xxx)
                     truncurl.append('0')
+                    writeTOlog('truncurl.append(0)')
                     msg = (msg +'\n'+truncurl[site] + ' ch ' + s[site])
     print('finished for site in range(0, len(url), 1)')
     #sendEmail = 1
