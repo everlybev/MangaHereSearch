@@ -51,6 +51,7 @@ def get_lines_between_separator(starting_separator, TheConfigFile, ending_separa
 
 the_file = 'MangaHere.txt'
 def write2file(text, file=the_file, mode='a'):
+    print(text)
     logger = open(file, mode)
     logger.write(text)
     logger.write('\n')
@@ -187,6 +188,7 @@ def writeTOlog(x):
     now = datetime.now()
     dt_string = now.strftime("%m/%d/%Y %I:%M:%S %p")
     logger.write('\n')
+    print(x)
     logger.write(x + '\n')
     logger.close()
 
@@ -233,31 +235,41 @@ def mangaHere(counter, parray):
         print(truncurl[i])
         
     s = []
-    p = parray
     #p = [1, 2, 3, 4, 5, 6, 7, 8, 9]
     skip = []
     
     #number of sites now may be more than the previous number of sites
     #Must adjust for that
-    if len(p) < len(url):
-        difference = len(url) - len(p)
-        for i in range(len(p), len(p)+difference, 1):
-            p.append('0')
-            truncurl.append('0')
-        print('less '+str(len(p)))
-        print(len(url))
+    if counter <= 0:
+        p = []
+        for i in url:
+            p.append(0)
+    else:        
+        p = parray
+        if len(p) < len(url):
+            difference = len(url) - len(p)
+            for i in range(len(p), len(p)+difference, 1):
+                p.append('0')
+                truncurl.append('0')
+            print('less '+str(len(p)))
+            print(len(url))
 
-    #number of sites now may be less than the previous number of sites
-    #Must adjust for that
-    if len(p) > len(url):
-        difference = len(p) - len(url)
-        for i in range(len(url), len(url)+difference, 1):
-            url.append('0')
-            truncurl.append('0')
-        print('more '+str(len(p)))
-        print(len(url))
+        #number of sites now may be less than the previous number of sites
+        #Must adjust for that
+        if len(p) > len(url):
+            difference = len(p) - len(url)
+            for i in range(len(url), len(url)+difference, 1):
+                url.append('0')
+                truncurl.append('0')
+            print('more '+str(len(p)))
+            print(len(url))
                 
-    
+    if len(truncurl) != len(url):
+        print(url)
+        print('****')
+        print(truncurl)
+        write2file('NOT =')
+        exit(0)
     
     msg = 'Go to: '
     sendEmail = 0
@@ -270,7 +282,7 @@ def mangaHere(counter, parray):
                 response = requests.get(url[site])#, headers=headers)
         except:
             better_sleep(6)
-            site = "Fucked"
+            #site = "Fucked"
             print('fucked')
         if site != "Fucked":
             # parse the downloaded page
@@ -280,22 +292,28 @@ def mangaHere(counter, parray):
             try:
                 data = BeautifulSoup(response.text, "lxml").body.find(class_='manga-list-4-list line')
                 data = data.findAll(class_='manga-list-4-item-tip')[1].getText()
-                s.append(data)
+                #s.append(data)
             except:
                 try:
                     data = BeautifulSoup(response.text, "lxml").body.find(class_='manga-list-4-list line')
                     data = data.findAll(class_='manga-list-4-item-tip')[1]
                 except:
                     data = '{} seems to be down'.format(url[site])
+            print('pre data {}'.format(data))
             data = data.replace('Latest Chapter:Ch.', '')
+            print('post data {}'.format(data))
+            #debugging
+##            if (site == 1) and (counter % 3 == 0) and (counter > 0):
+##                data = '11037'
             starts_with_zero = True
             while starts_with_zero:
                 if data.startswith('0'):
                     data = data[1:]
                 else:
                     starts_with_zero = False
-            write2file('{} current chapter is {}'.format(url[site], data))
+            write2file('C {}: {} current chapter is {}'.format(counter, url[site], data))
             s.append(data)
+            print(s)
             #print(data)
             #print('s['+str(site)+'] had no issues')
             if ((data == None) or (str(data) == 'None') or (response == None)):
@@ -310,15 +328,20 @@ def mangaHere(counter, parray):
                 except:
                     pass
                 logger.close()
+            print('site = {}'.format(site))
             if s[site] == p[site]:
+                print(site)
+                print('s:{}'.format(s[site]))
+                print('p:{}'.format(p[site]))
                 p[site] = s[site]
             else:
                 sendEmail = 1
                 p[site] = s[site]
                 try:
                     msg = (msg +'\n'+truncurl[site] + ' ch ' + s[site])
+                    write2file(msg)
                 except Exception as xxx:
-                    writeTOlog(xxx)
+                    writeTOlog(str(xxx))
                     truncurl.append('0')
                     writeTOlog('truncurl.append(0)')
                     msg = (msg +'\n'+truncurl[site] + ' ch ' + s[site])
@@ -393,8 +416,12 @@ def main():
                 past = today
             else:
                 try:
+                    status = getStatus('StatusMH: ')
                     if (getStatus('StatusMH: ') == 'Go') or (getStatus('StatusMH: ') == 'GO') or (getStatus('StatusMH: ') == 'go'):
+                        print(count)
                         past_soup = mangaHere(count, past_soup)
+                    else:
+                        print(status)
                 except Exception as errrrrrrrr:
                     error = str(errrrrrrrr)
                     print(errrrrrrrr)
@@ -410,6 +437,9 @@ def main():
                 past = today
                 daycount = daycount + 1
         better_sleep(secrets.randbelow(69))
+##        if count == 4:
+##            print(count)
+##            exit(0)
         #Get log file size in bytes
         MangaHere_text_file_size = os.path.getsize('MangaHere.txt')
         if MangaHere_text_file_size > 64321:
