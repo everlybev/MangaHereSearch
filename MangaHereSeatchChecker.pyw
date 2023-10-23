@@ -280,6 +280,8 @@ def mangaHere(counter, parray):
         try:
             if url[site] != '0':
                 response = requests.get(url[site])#, headers=headers)
+            else:
+                writeTOlog('MangaHereSearchChecker:\nurl[{}] = {}'.format(site, url[site]))
         except:
             better_sleep(6)
             #site = "Fucked"
@@ -411,7 +413,7 @@ def main():
         #now the set up is done do the check for real
         if count > 0:
             now = datetime.now()
-            today = now.strftime("%I") #check once each hour
+            today = now.strftime("%S") #check once each hour
             if today == past:
                 past = today
             else:
@@ -425,7 +427,7 @@ def main():
                 except Exception as errrrrrrrr:
                     error = str(errrrrrrrr)
                     print(errrrrrrrr)
-                    msg = error + '\n' + 'There was a main() error. Maybe check mangahere'
+                    msg = error + '\n' + 'There was a main() error in MangaHereSeachChecker. Maybe check mangahere'
                     email(msg)
                     logger = open('MangaHere.txt', 'a')
                     now = datetime.now()
@@ -436,7 +438,7 @@ def main():
                     logger.close()
                 past = today
                 daycount = daycount + 1
-        better_sleep(secrets.randbelow(69))
+        better_sleep(secrets.randbelow(int(6.9)))
 ##        if count == 4:
 ##            print(count)
 ##            exit(0)
