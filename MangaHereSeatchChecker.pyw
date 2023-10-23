@@ -413,7 +413,7 @@ def main():
         #now the set up is done do the check for real
         if count > 0:
             now = datetime.now()
-            today = now.strftime("%S") #check once each hour
+            today = now.strftime("%I") #check once each hour
             if today == past:
                 past = today
             else:
@@ -438,7 +438,7 @@ def main():
                     logger.close()
                 past = today
                 daycount = daycount + 1
-        better_sleep(secrets.randbelow(int(6.9)))
+        better_sleep(secrets.randbelow(int(69)))
 ##        if count == 4:
 ##            print(count)
 ##            exit(0)
