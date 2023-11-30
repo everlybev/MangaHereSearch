@@ -14,9 +14,7 @@ from email.message import EmailMessage
 TheConfigurationFile = 'F:\\Users\\dudeo\\AppData\\Local\\Programs\\Python\\Python39\\dist\\Config.txt'
 
 def better_sleep(time2wait):
-    start = time.time()
-    while((time.time()-start)<time2wait-.005):
-        time.sleep(1)
+    time.sleep(time2wait)
 
 def get_lines_between_separator(starting_separator, TheConfigFile, ending_separator=''):
     #Opens config file and returns a list of every line betwix the separators
@@ -284,6 +282,7 @@ def mangaHere(counter, parray):
                 writeTOlog('MangaHereSearchChecker:\nurl[{}] = {}'.format(site, url[site]))
         except:
             better_sleep(6)
+            response = None
             #site = "Fucked"
             print('fucked')
         if site != "Fucked":
