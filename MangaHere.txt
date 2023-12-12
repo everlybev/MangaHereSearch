@@ -1048,3 +1048,26 @@ MangaHere got response
 11/30/2023 06:13:58 AM
 Just started.  Not sending email. 
 C 1: https://www.mangahere.cc/search?title=Mushoku+no+Tensei+-+Eris+Gaiden current chapter is 6.2
+C 0: https://www.mangahere.cc/search?title=Mushoku+no+Tensei+-+Eris+Gaiden current chapter is 6.2
+Go to: 
+mangahere.cc/search?title=Mushoku+no+Tensei+-+Eris+Gaiden ch 6.2
+C 0: https://www.mangahere.cc/search?title=Mushoku+Tensei+-+Isekai+Ittara+Honki+Dasu current chapter is 96
+Go to: 
+mangahere.cc/search?title=Mushoku+no+Tensei+-+Eris+Gaiden ch 6.2
+mangahere.cc/search?title=Mushoku+Tensei+-+Isekai+Ittara+Honki+Dasu ch 96
+C 0: https://www.mangahere.cc/search?title=Mushoku+Tensei+-+Depressed+Magician current chapter is 15
+Go to: 
+mangahere.cc/search?title=Mushoku+no+Tensei+-+Eris+Gaiden ch 6.2
+mangahere.cc/search?title=Mushoku+Tensei+-+Isekai+Ittara+Honki+Dasu ch 96
+mangahere.cc/search?title=Mushoku+Tensei+-+Depressed+Magician ch 15
+C 0: https://www.mangahere.cc/search?title=tsuiteru+kanojo+niku current chapter is 26.5
+Go to: 
+mangahere.cc/search?title=Mushoku+no+Tensei+-+Eris+Gaiden ch 6.2
+mangahere.cc/search?title=Mushoku+Tensei+-+Isekai+Ittara+Honki+Dasu ch 96
+mangahere.cc/search?title=Mushoku+Tensei+-+Depressed+Magician ch 15
+mangahere.cc/search?title=tsuiteru+kanojo+niku ch 26.5
+
+12/12/2023 08:16:45 AM
+MangaHere got response
+12/12/2023 08:16:45 AM
+Just started.  Not sending email. 

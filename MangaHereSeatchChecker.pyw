@@ -294,12 +294,13 @@ def mangaHere(counter, parray):
                 data = BeautifulSoup(response.text, "lxml").body.find(class_='manga-list-4-list line')
                 data = data.findAll(class_='manga-list-4-item-tip')[1].getText()
                 #s.append(data)
-            except:
+            except Exception as error:
+                write2file('data BeautifulSoup response.text bod class=manga-list-4-list line\n{}'.format(str(error)))
                 try:
                     data = BeautifulSoup(response.text, "lxml").body.find(class_='manga-list-4-list line')
                     data = data.findAll(class_='manga-list-4-item-tip')[1]
-                except:
-                    data = '{} seems to be down'.format(url[site])
+                except Exception as err:
+                    data = '{} seems to be down\n{}'.format(url[site], str(err))
             print('pre data {}'.format(data))
             data = data.replace('Latest Chapter:Ch.', '')
             print('post data {}'.format(data))
@@ -312,7 +313,7 @@ def mangaHere(counter, parray):
                     data = data[1:]
                 else:
                     starts_with_zero = False
-            write2file('C {}: {} current chapter is {}'.format(counter, url[site], data))
+            write2file('Counter={}: {} current chapter is {}'.format(counter, url[site], data))
             s.append(data)
             print(s)
             #print(data)
